@@ -17,11 +17,8 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name', 255);
-            $table->string('email');
-            $table->string('password', 255);
             $table->decimal('salary');
             $table->decimal('bonus_percent');
-            $table->boolean('admin');
         });
     }
 
