@@ -23,7 +23,7 @@
         </div>
     @endif
 
-    <form action="{{ route('employee.update', $project->id) }}" method="POST">
+    <form action="{{ route('employee.update', $employee->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -38,7 +38,7 @@
                 <div class="form-group">
                     <strong>salary:</strong>
                     <textarea type="number" class="form-control" style="height:50px" name="salary"
-                        placeholder="salary">{{ $project->salary }}</textarea>
+                        placeholder="salary">{{ $employee->salary }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
