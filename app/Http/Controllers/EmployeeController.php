@@ -14,7 +14,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        $employees = Employee::latest()->paginate(5);
+        $employee = Employee::latest()->paginate(5);
         return view('employee.index', compact('employee'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
