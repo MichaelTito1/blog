@@ -86,7 +86,7 @@ class EmployeeController extends Controller
             'bonus_percent' => 'required'
         ]);
         
-        Employee::update($request->all());
+        $employee->update($request->all());
 
         return redirect()->route('employee.index')
             ->with('success', 'Employee created successfully.');
