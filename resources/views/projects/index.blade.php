@@ -33,11 +33,12 @@
         @foreach ($projects as $project)
             <tr>
                 <td>{{ ++$i }}</td>
-                <td>{{ $project->name }}</td>
-                <td>{{ $project->introduction }}</td>
-                <td>{{ $project->location }}</td>
-                <td>{{ $project->cost }}</td>
-                <td>{{ date_format($project->created_at, 'jS M Y') }}</td>
+                <td>{{ $project->month }}</td>
+                <td>{{ $project->salaries_payment_day }}</td>
+                <td>{{ $project->bonus_payment_day }}</td>
+                <td>{{ $project->salaries_total }}</td>
+                <td>{{ $project->bonus_total }}</td>
+                <td>{{ $project->payments_total }}</td>
                 <td>
                     <form action="{{ route('projects.destroy', $project->id) }}" method="POST">
 

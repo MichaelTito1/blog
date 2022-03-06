@@ -34,6 +34,13 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
+                    <strong>salaries payment day:</strong>
+                    <textarea class="form-control" style="height:50px" name="salaries_payment_day"
+                        placeholder="salaries_payment_day"></textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
                     <strong>bonus payment day:</strong>
                     <textarea class="form-control" style="height:50px" name="bonus_payment_day"
                         placeholder="bonus_payment_day"></textarea>
