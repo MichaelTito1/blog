@@ -24,6 +24,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::post('register', [AuthController::class, 'register']);
 Route::post('login', [AuthController::class, 'login']);
+Route::post('projects/fillTable', [ProjectController::class, 'fillTable']);
+Route::post('projects/{month?}', [ProjectController::class, 'showByMonth']);
 
 Route::apiResource('projects', ProjectController::class)->middleware('auth:api');
 Route::apiResource('employees', EmployeeController::class)->middleware('auth:api');
