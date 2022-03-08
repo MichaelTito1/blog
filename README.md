@@ -27,3 +27,6 @@ Please make sure to have the following installed on your device:
 ## View Payments by month
 1. Login & Copy `access_token` and paste it in postman
 2. send the following URI as GET [http://localhost:8000/api/projects/{month}]. Type `month` in the 3 letter Capitalized format (e.g. Aug)
+
+## Send Email Notifications
+There is a command that checks if there is a payment within 2 days then sends a notification email to all admins.
